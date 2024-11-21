@@ -1,0 +1,204 @@
+/* Variables de color */
+:root {
+  --fondo: #a9ffbb;
+  --primario: #4caf50;
+  --secundario: #1976d2;
+  --terciario: #ff9800;
+  --texto: #333;
+  --fondo-hover: #e0e0e0;
+  --sombra: rgba(0, 0, 0, 0.1);
+}
+
+/* Fondo con imagen */
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url("https://media.gettyimages.com/id/165767990/es/vector/seamless-bicicletas-fijas-y-patrón-de-piezas.jpg?s=612x612&w=gi&k=20&c=HuE1Ja_JeP8MBsGdpaPjlaH_qF0Ov6NoX7Qn3iKQT6c="); /* Reemplazar con la ruta de tu imagen */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--texto);
+  margin: 0;
+  padding: 0;
+}
+
+/* Transparencia en las secciones */
+main,
+header,
+footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 6px var(--sombra);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  color: var(--primario);
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px var(--sombra);
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--secundario);
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: var(--terciario);
+}
+
+/* Formulario */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  border: 2px solid var(--primario);
+  box-shadow: 0 4px 6px var(--sombra);
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--primario);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: var(--texto);
+  font-size: 1rem;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--texto);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: var(--secundario);
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--terciario);
+  transform: scale(1.09);
+}
+
+/* Lista y tabla */
+ul {
+  list-style-type: square;
+  padding: 0 20px;
+}
+
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 2px solid var(--primario);
+  background-color: white;
+}
+
+th,
+td {
+  border: 1px solid var(--texto);
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+th {
+  background-color: var(--primario);
+  color: white;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+/* Cálculo de horas */
+.calculo-horas {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.calculo-horas button {
+  background-color: var(--terciario);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.calculo-horas button:hover {
+  background-color: var(--secundario);
+  transform: scale(1.05);
+}
+
+#total-horas {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primario);
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: var(--texto);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  form,
+  table {
+    width: 100%;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 14px;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+}
